@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ruth Nyambura — Full Stack Developer</title>
@@ -464,6 +465,11 @@
       transition: all 0.3s;
     }
     .services__skill:hover { border-color: var(--accent); color: var(--accent); background: rgba(168,85,247,0.08); }
+    .services__skill.services__skill--learning {
+      border-style: dashed;
+      color: var(--text2);
+    }
+    .services__skill.services__skill--learning:hover { border-color: var(--blue); color: var(--blue); background: rgba(99,102,241,0.08); }
 
     /* Toggle button — bottom-right corner like dream */
     .services__button {
@@ -663,7 +669,7 @@
           <a href="https://www.instagram.com/_ruthnyambura_/" target="_blank" class="home__social-link" title="Instagram"><i class="ri-instagram-line"></i></a>
         </div>
 
-        <a href="resume.docx" download target="_blank" class="home__cv">
+        <a href="Ruth Nyambura cv.docx" download target="_blank" class="home__cv">
           Resume <i class="ri-file-list-2-line"></i>
         </a>
       </div>
@@ -674,12 +680,12 @@
       <div class="about__shadow"></div>
       <div class="about__container container ">
         <div class="about__data">
-          <h2 class="section__title"><span>Creativity</span><br/>Is My Passion</h2>
+          <h2 class="section__title">Built For <span>Kenyan Businesses</span><br/>Trusted To Deliver</h2>
           <p class="about__description">
-            I'm a <b>Full Stack Developer</b> who builds complete digital solutions — from pixel-perfect interfaces to powerful backend systems. Driven by <b>curiosity and a hunger to learn</b>, I'm always exploring new ways to build better products.
+            I'm a Nairobi-based <b>Full Stack Developer</b> helping Kenyan businesses — restaurants, bars, law firms, e-commerce brands — launch fast, professional websites that turn visitors into paying customers. Every site I build is tested to work smoothly on the everyday Android phones most of your customers actually browse on.
           </p>
           <p class="about__description" style="margin-top:-1rem;">
-            My approach combines <b>frontend craft</b> with a genuine love for the backend. I'm deepening my skills in APIs, databases, and everything that powers what users see. <b>Always learning, always shipping.</b>
+            My core toolkit is <b>HTML, CSS, JavaScript and WordPress</b>, sharpened with <b>Claude Code</b> for faster, cleaner builds. I'm also actively learning <b>Python</b> to grow into full backend development. <b>Honest about where I am, always pushing to get better.</b>
           </p>
           <div class="about__stats">
             <div>
@@ -696,7 +702,7 @@
             </div>
           </div>
           <div class="about__actions">
-            <a href="resume.docx" download target="_blank" class="button">
+            <a href="Ruth Nyambura cv.docx" download target="_blank" class="button">
               Resume <i class="ri-file-list-2-line"></i>
             </a>
             <a href="#contact" class="button button--outline">
@@ -749,7 +755,7 @@
               <div class="projects__data">
                 <h1 class="projects__title">Mukoma's Closet</h1>
                 <p class="projects__subtitle">Techstack used</p>
-                <p class="projects__description">React, Tailwind CSS, Firebase — Fashion e-commerce platform with shopping cart and checkout.</p>
+                <p class="projects__description">WordPress, WooCommerce, CSS — Fashion e-commerce platform with shopping cart and checkout.</p>
               </div>
               <div class="projects__image">
                 <img src="images/mukoma.png" alt="Mukoma's Closet" class="projects__img" onerror="this.classList.add('img-error')" />
@@ -764,7 +770,7 @@
               <div class="projects__data">
                 <h1 class="projects__title">Habibi Haven Restaurant</h1>
                 <p class="projects__subtitle">Techstack used</p>
-                <p class="projects__description">React, Node.js, MongoDB — Full-stack restaurant app with menu, reservations, and online ordering.</p>
+                <p class="projects__description">WordPress, HTML, CSS, JavaScript — Restaurant website with menu, reservations, and online ordering.</p>
               </div>
               <div class="projects__image">
                 <img src="images/habibi.png" alt="Habibi Haven" class="projects__img" onerror="this.classList.add('img-error')" />
@@ -779,7 +785,7 @@
               <div class="projects__data">
                 <h1 class="projects__title">The Curve Restaurant</h1>
                 <p class="projects__subtitle">Techstack used</p>
-                <p class="projects__description">React, Node.js, MongoDB — Full-stack restaurant app with menu, reservations, and online ordering.</p>
+                <p class="projects__description">WordPress, HTML, CSS, JavaScript — Restaurant website with menu, reservations, and online ordering.</p>
               </div>
               <div class="projects__image">
                 <img src="images/curve.png" alt="The Curve Restaurant" class="projects__img" onerror="this.classList.add('img-error')" />
@@ -794,7 +800,7 @@
               <div class="projects__data">
                 <h1 class="projects__title">Liquormart Bahati</h1>
                 <p class="projects__subtitle">Techstack used</p>
-                <p class="projects__description">React, Node.js, MongoDB — Bar &amp; sports club site with events, menu, and reservations.</p>
+                <p class="projects__description">WordPress, HTML, CSS, JavaScript — Bar &amp; sports club site with events, menu, and reservations.</p>
               </div>
               <div class="projects__image">
                 <img src="images/liquor mart.png" alt="Liquormart Bahati" class="projects__img" onerror="this.classList.add('img-error')" />
@@ -809,7 +815,7 @@
               <div class="projects__data">
                 <h1 class="projects__title">Booze and Banter</h1>
                 <p class="projects__subtitle">Techstack used</p>
-                <p class="projects__description">React, Node.js, MongoDB — Vibrant bar website with drinks menu and event listings.</p>
+                <p class="projects__description">HTML, CSS, JavaScript — Vibrant bar website with drinks menu and event listings.</p>
               </div>
               <div class="projects__image">
                 <img src="images/logo booze.png" alt="Booze and Banter" class="projects__img" onerror="this.classList.add('img-error')" />
@@ -839,7 +845,7 @@
               <div class="projects__data">
                 <h1 class="projects__title">Sneaker Street</h1>
                 <p class="projects__subtitle">Techstack used</p>
-                <p class="projects__description">React, Stripe API, Tailwind CSS — Premium sneaker marketplace with secure payment integration.</p>
+                <p class="projects__description">WordPress, WooCommerce, CSS — Premium sneaker marketplace with secure payment integration.</p>
               </div>
               <div class="projects__image">
                 <img src="images/sneakerstreet.png" alt="Sneaker Street" class="projects__img" onerror="this.classList.add('img-error')" />
@@ -863,8 +869,8 @@
           <div class="services__card">
             <div class="blob"></div>
             <div class="services__data">
-              <h2 class="services__title">Frontend Skills</h2>
-              <p class="services__description">Building beautiful, responsive interfaces with modern frameworks and pixel-perfect implementation.</p>
+              <h2 class="services__title">Frontend Development</h2>
+              <p class="services__description">Crafting responsive, fast-loading websites that look sharp and work smoothly on every device — including the everyday Android phones most Kenyan users browse on.</p>
             </div>
             <div class="services__info">
               <h3 class="services__subtitle">Technologies</h3>
@@ -872,11 +878,10 @@
                 <li class="services__skill">HTML5</li>
                 <li class="services__skill">CSS3</li>
                 <li class="services__skill">JavaScript</li>
-                <li class="services__skill">React</li>
-                <li class="services__skill">Next.js</li>
-                <li class="services__skill">TypeScript</li>
-                <li class="services__skill">Tailwind CSS</li>
-                <li class="services__skill">Framer Motion</li>
+                <li class="services__skill">WordPress</li>
+                <li class="services__skill">Responsive Design</li>
+                <li class="services__skill">Figma to Code</li>
+                <li class="services__skill">Cross-Browser Testing</li>
               </ul>
             </div>
             <button class="services__button" aria-label="Expand skills">
@@ -887,20 +892,39 @@
           <div class="services__card">
             <div class="blob blob-2"></div>
             <div class="services__data">
-              <h2 class="services__title">Backend Skills</h2>
-              <p class="services__description">Designing scalable systems with powerful databases, APIs, and cloud infrastructure solutions.</p>
+              <h2 class="services__title">Tools &amp; AI-Assisted Workflow</h2>
+              <p class="services__description">Building and shipping faster with modern developer tools and AI-assisted coding — without cutting corners on quality.</p>
             </div>
             <div class="services__info">
               <h3 class="services__subtitle">Technologies</h3>
               <ul class="services__skills">
-                <li class="services__skill">Node.js</li>
-                <li class="services__skill">Express</li>
-                <li class="services__skill">MongoDB</li>
-                <li class="services__skill">PostgreSQL</li>
-                <li class="services__skill">Firebase</li>
-                <li class="services__skill">Supabase</li>
-                <li class="services__skill">REST APIs</li>
+                <li class="services__skill">Claude Code</li>
                 <li class="services__skill">Git &amp; GitHub</li>
+                <li class="services__skill">VS Code</li>
+                <li class="services__skill">Netlify</li>
+                <li class="services__skill">Chrome DevTools</li>
+                <li class="services__skill">EmailJS</li>
+                <li class="services__skill">Versel</li>
+              </ul>
+            </div>
+            <button class="services__button" aria-label="Expand skills">
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+          </div>
+
+          <div class="services__card">
+            <div class="blob"></div>
+            <div class="services__data">
+              <h2 class="services__title">Currently Expanding</h2>
+              <p class="services__description">Actively growing my stack to become a stronger full stack developer. Honest about where I am today, committed to leveling up.</p>
+            </div>
+            <div class="services__info">
+              <h3 class="services__subtitle">Learning Now</h3>
+              <ul class="services__skills">
+                <li class="services__skill services__skill--learning">Python</li>
+                <li class="services__skill services__skill--learning">Backend Fundamentals</li>
+                <li class="services__skill services__skill--learning">REST APIs</li>
+                <li class="services__skill services__skill--learning">Django</li>
               </ul>
             </div>
             <button class="services__button" aria-label="Expand skills">
@@ -1146,103 +1170,93 @@
     });
 
     /* ══════════════════════════════
-       CONTACT FORM
+       CONTACT FORM — EMAILJS
     ══════════════════════════════ */
-   /* ══════════════════════════════
-  /* ══════════════════════════════
-   EMAILJS INITIALIZATION WITH DEBUGGING
-══════════════════════════════ */
-console.log('📌 Initializing EmailJS...');
+    console.log('📌 Initializing EmailJS...');
 
-// Check if emailjs library is loaded
-if (typeof emailjs !== 'undefined') {
-  console.log('✅ EmailJS library loaded successfully');
-  emailjs.init("mHyS41IsdfWG7VXEX");
-  console.log('✅ EmailJS initialized');
-} else {
-  console.error('❌ EmailJS library NOT loaded! Check your script tag.');
-}
-
-/* ══════════════════════════════
-   CONTACT FORM - with EmailJS
-══════════════════════════════ */
-function sendMsg() {
-  console.log('📌 sendMsg() called');
-
-  const name    = document.getElementById('cName')?.value.trim();
-  const email   = document.getElementById('cEmail')?.value.trim();
-  const subject = document.getElementById('cSubject')?.value.trim();
-  const message = document.getElementById('cMessage')?.value.trim();
-
-  console.log('Form Data:', { name, email, subject, message });
-
-  // Validation
-  if (!name || !email || !subject || !message) {
-    console.warn('⚠️ Form validation failed - empty fields');
-    showToast('❌ Please fill in all fields');
-    return;
-  }
-
-  // Email validation
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(email)) {
-    console.warn('⚠️ Invalid email format:', email);
-    showToast('❌ Please enter a valid email');
-    return;
-  }
-
-  console.log('✅ Validation passed');
-
-  // Show loading state
-  const btn = document.querySelector('.send-btn');
-  const originalText = btn.innerHTML;
-  btn.innerHTML = 'Sending... <i class="ri-loader-4-line"></i>';
-  btn.disabled = true;
-
-  console.log('📤 Sending email via EmailJS...');
-
-  // Send email via EmailJS
- emailjs.send(
-    'service_sbo2qfl',
-    'template_9r2dwlf',  
-    'template_cro9fno'
-    {
-      to_email: 'nyamburakihonge@gmail.com',
-      from_name: name,
-      from_email: email,
-      subject: subject,
-      message: message
+    if (typeof emailjs !== 'undefined') {
+      console.log('✅ EmailJS library loaded successfully');
+      emailjs.init("mHyS41IsdfWG7VXEX");
+      console.log('✅ EmailJS initialized');
+    } else {
+      console.error('❌ EmailJS library NOT loaded! Check your script tag.');
     }
-)
-  )
-  .then((response) => {
-    console.log('✅ Email sent successfully!', response);
-    
-    // Success
-    btn.innerHTML = 'Message Sent! <i class="ri-check-line"></i>';
-    btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
-    
-    // Clear form
-    ['cName', 'cEmail', 'cSubject', 'cMessage'].forEach(id => 
-      document.getElementById(id).value = ''
-    );
-    
-    showToast('✅ Message sent successfully!');
-    
-    // Reset button
-    setTimeout(() => {
-      btn.innerHTML = originalText;
-      btn.style.background = '';
-      btn.disabled = false;
-    }, 2000);
-  })
-  .catch((error) => {
-    console.error('❌ EmailJS Error:', error);
-    showToast('❌ Failed to send message. Check console for details.');
-    btn.innerHTML = originalText;
-    btn.disabled = false;
-  });
-}
+
+    function sendMsg() {
+      console.log('📌 sendMsg() called');
+
+      const name    = document.getElementById('cName')?.value.trim();
+      const email   = document.getElementById('cEmail')?.value.trim();
+      const subject = document.getElementById('cSubject')?.value.trim();
+      const message = document.getElementById('cMessage')?.value.trim();
+
+      console.log('Form Data:', { name, email, subject, message });
+
+      // Validation
+      if (!name || !email || !subject || !message) {
+        console.warn('⚠️ Form validation failed - empty fields');
+        showToast('❌ Please fill in all fields');
+        return;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        console.warn('⚠️ Invalid email format:', email);
+        showToast('❌ Please enter a valid email');
+        return;
+      }
+
+      console.log('✅ Validation passed');
+
+      // Show loading state
+      const btn = document.querySelector('.send-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Sending... <i class="ri-loader-4-line"></i>';
+      btn.disabled = true;
+
+      console.log('📤 Sending email via EmailJS...');
+
+      // Send email via EmailJS
+      emailjs.send(
+        'service_sbo2qfl',
+        'template_9r2dwlf',
+        {
+          to_email: 'nyamburakihonge@gmail.com',
+          from_name: name,
+          from_email: email,
+          subject: subject,
+          message: message
+        }
+      )
+      .then((response) => {
+        console.log('✅ Email sent successfully!', response);
+
+        // Success
+        btn.innerHTML = 'Message Sent! <i class="ri-check-line"></i>';
+        btn.style.background = 'linear-gradient(135deg,#22c55e,#16a34a)';
+
+        // Clear form
+        ['cName', 'cEmail', 'cSubject', 'cMessage'].forEach(id =>
+          document.getElementById(id).value = ''
+        );
+
+        showToast('✅ Message sent successfully!');
+
+        // Reset button
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 2000);
+      })
+      .catch((error) => {
+        console.error('❌ EmailJS Error:', error);
+        showToast('❌ Failed to send message. Check console for details.');
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      });
+    }
 
     /* ══════════════════════════════
        TOAST
@@ -1285,3 +1299,4 @@ function sendMsg() {
   
 </body>
 </html>
+/*fix form bug update skills and about section
